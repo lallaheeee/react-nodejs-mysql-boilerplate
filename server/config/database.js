@@ -5,10 +5,10 @@ import Domain from '../domain/model';
 
 const db = {
   sequelize: null,
-  Domain,
 
   async connect() {
     this.sequelize = new Sequelize(dbConfig());
+    this.Domain = Domain(this.sequelize);
 
     this.sequelize
       .authenticate()
