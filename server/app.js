@@ -1,7 +1,9 @@
 import express from 'express';
 import morgan from 'morgan';
-import { router } from './config';
+import { router, database } from './config';
 import { Console } from './utils';
+
+database.connect();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
