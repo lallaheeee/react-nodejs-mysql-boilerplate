@@ -5,7 +5,7 @@ function domain(sequelize) {
     'domain',
     {
       title: DataTypes.STRING,
-      active: DataTypes.BOOLEAN,
+      active: DataTypes.STRING,
     },
     {
       timestamps: true,
