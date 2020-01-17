@@ -8,13 +8,7 @@ const Header = () => (
     <nav>
       <ul>
         <Styled.Li>
-          <Styled.A>Home</Styled.A>
-        </Styled.Li>
-        <Styled.Li>
-          <Styled.A>Service</Styled.A>
-        </Styled.Li>
-        <Styled.Li>
-          <Styled.A>About</Styled.A>
+          <Styled.A to="/">Home</Styled.A>
         </Styled.Li>
       </ul>
     </nav>

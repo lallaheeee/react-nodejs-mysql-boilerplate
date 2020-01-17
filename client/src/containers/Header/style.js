@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Header = styled.header`
   display: flex;
@@ -15,7 +16,7 @@ const Li = styled.li`
   padding: 0 4rem;
 `;
 
-const A = styled.a`
+const A = styled(Link)`
   & {
     line-height: 5rem;
     color: #4a4c88;
